@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for:users
   root 'tweets#index'
   get 'tweets' => 'tweets#index'
   get 'tweets/new' => 'tweets#new'
