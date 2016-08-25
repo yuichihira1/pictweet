@@ -3,6 +3,7 @@ class TweetsController < ApplicationController
   before_action :move_to_index, except: :index
 
   def index
+     @nickname = current_user.nickname
     @tweets = Tweet.page(params[:page]).per(5).order("created_at DESC")
   end
 
