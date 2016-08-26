@@ -1,6 +1,7 @@
   <div class="contents row" >
     <% @tweets.each do |tweet| %>
       <div class="content_post" style="background-image: url(<%= tweet.image %>);">
+      <% if user_signed_in? && current_user.id == tweets_user.id %>
         <%= simple_format(tweet.text) %>
         <span class="name">
         <a href="">
