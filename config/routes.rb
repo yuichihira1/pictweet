@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   patch   'tweets/:id'  => 'tweets#update'
   get 'tweets/:id/edit' => 'tweets#edit'
   get  'users/:id' => 'users#show'
+  gets 'tweets/:id' => 'tweets#show'
 end
