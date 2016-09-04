@@ -50,5 +50,6 @@ group :development do
   gem 'spring'
   gem 'kaminari'
   gem 'devise'
+  gem 'rspec-rails', "~> 3.1.0"
 end
 
